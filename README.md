@@ -3,6 +3,8 @@ Lesson generator using live attention detection and student history, tailored fo
 
 ROOM FOR IMPROVEMENT/PROBLEMS FOR ANOTHER DAY:
 
+It won't deploy because Mediapipe is not supported, and it was not able to switch runtimes.
+
 1. Use data of actual students to get a good background weight instead of generated fake weights.
 2. Ditch this dataset and use another that has more movement. This dataset was very much the same all the time, with high engagement, making the attention perform worse
 3. An extension of the last one, find actual neurodivergent K-12 students to better understand and manually write labels for a better dataset that can then be used to perform this.
