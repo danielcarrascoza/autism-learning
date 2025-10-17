@@ -5,8 +5,8 @@ import time
 from model.attention_model import AttentionDetector
 from model.fusion_model import FusionModel
 
-st.set_page_config(page_title="NeuroLearn Live", layout="wide")
-st.title("🎓 NeuroLearn AI – Attention Tracker MVP")
+st.set_page_config(page_title="Autism Learning", layout="wide")
+st.title("Autism Learning")
 
 # --- Sidebar: student selection & controls ---
 st.sidebar.header("Controls")
@@ -33,7 +33,7 @@ fusion = FusionModel(student_id)
 
 # --- Start webcam if running ---
 if st.session_state.running:
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     if not cap.isOpened():
         st.error("⚠️ Cannot access webcam. Allow camera permissions.")
         st.stop()

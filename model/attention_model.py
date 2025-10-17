@@ -21,7 +21,6 @@ class AttentionDetector:
         h, w, _ = frame.shape
         heatmap = np.zeros((h, w), dtype=np.float32)
 
-        # Default (no face)
         attention_now = {
             "gaze_score": 0.0,
             "blink_score": 0.0,
